@@ -48,8 +48,9 @@ export default function Example({locale}) {
             </p>
         )
     }
+
     const drFeatures = [
-        t("F1"),t("F2"),t("F3"),t("F4"),t("F5")
+        t("F1"), t("F2"), t("F3"), t("F4"), t("F5")
     ]
 
     return (
@@ -160,24 +161,14 @@ export default function Example({locale}) {
                     {openVideo && <div
                         className={"fixed inset-0 bg-black bg-opacity-80 backdrop-filter backdrop-blur md:px-32 sm:px-8 px-4 z-1001 flex items-center justify-center"}>
                         <div
-                            className={"bg-black relative rounded-xl h-auto w-full md:w-8/12 rounded-xl overflow-hidden"}>
+                            className={"bg-black relative rounded-[16px] overflow-hidden h-auto w-full md:w-8/12 overflow-hidden"}>
                             {/*<video controls autoPlay className={""} src={"/pr-v.mp4"}/>*/}
-                            <div className={" w-full h-[250px]  md:h-[400px] xl:h-[600px] overflow-hidden"}>
-                                {locale === "fa" ?
-
-                                    <div className="relative aspect-video w-full h-full"><span className={"w-full"}
-                                                                                               style={{display: "block",}}></span>
-                                        <iframe className={"absolute inset-0 w-full rounded-xl overflow-hidden"}
-                                                src="https://www.aparat.com/video/video/embed/videohash/JFtON/vt/frame"
-                                                width="100%" height="100%"
-                                                allowFullScreen={true} webkitallowfullscreen={true}
-                                                mozallowfullscreen={true}></iframe>
-                                    </div> :
-                                    <iframe width="100%" height="100%"
-                                            src="https://www.youtube.com/embed/yrMaXZ-4STE"
-                                            title="YouTube video player" frameBorder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowFullScreen></iframe>}
+                            <div className={" w-full overflow-hidden overflow-hidden"}>
+                                <div className="relative overflow-hidden aspect-video w-full h-full">
+                                    <video controls className={"rounded-[16px]"}>
+                                        <source src={"/about-us-video.MP4"}/>
+                                    </video>
+                                </div>
                             </div>
                             <button onClick={() => setOpenVideo(false)}
                                     className={"bg-black bg-opacity-50 backdrop-filter backdrop-blur-xl text-white md:h-12 md:w-12 h-10 w-10 flex items-center justify-center md:top-5 ltr:md:left-5 ltr:left-2 rtl:md:right-5 rtl:right-2 top-2  rounded-full absolute"}>
