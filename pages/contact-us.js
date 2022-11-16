@@ -45,8 +45,8 @@ export default function Example() {
     ]
 
     return (
-        <MainLayout metaDescr={"راه های ارتباطی با سنگ ساختمانی کاریزما"}
-                    metaTitle={"تماس با ما | سنگ ساختمانی کاریزما"}>
+        <MainLayout metaDescr={"راه های ارتباطی با دکتر بهزاد عابدین"}
+                    metaTitle={"تماس با ما | دکتر بهزاد عابدین"}>
             <div className={"p-2 bg-background-light  "}>
                 <PageHeader breadcrumbs={breadCrumbs} title={t("Page Title")}
                             shortDescription={t("Ways of communication with Dr")}

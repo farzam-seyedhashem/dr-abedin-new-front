@@ -8,11 +8,10 @@ export const getServerSideProps = async ({req, res, locale}) => {
 
     const robots = locale==="fa"?`
 User-agent: *
-Allow: /
-Sitemap: https://karizmastone.com/sitemap.xml
+Disallow: /
   `:`
-User-agent: * 
-Disallow:
+User-agent: *
+Disallow: /
 `;
 
     res.setHeader("Content-Type", "text/plain");

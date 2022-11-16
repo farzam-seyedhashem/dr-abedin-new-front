@@ -42,7 +42,7 @@ export default function ProductView(props) {
                             // "priceValidUntil": "2022-09-11",
                             "availability": "https://schema.org/InStoreOnly",
                             "itemCondition": "https://schema.org/NewCondition",
-                            "seller":{"@type":"Organization","name":"سنگ ساختمانی کاریزما"}
+                            "seller":{"@type":"Organization","name":"دکتر بهزاد عابدین"}
                         },
                     }
                 )

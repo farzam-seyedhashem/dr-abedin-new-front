@@ -50,10 +50,10 @@ export default function MainLayout({children, title, metaTitle, metaDescr, metaK
     ]
 
     const siteSetting = {
-        title: "سنگ ساختمانی | خرید - فروش - صادرات سنگ ساختمانی | سنگ ساختمانی کاریزما",
-        description: "خرید سنگ ساختمانی، فروش سنگ ساختمانی، صادرات سنگ ساختمانی مرمریت، تراورتن، گرانیت، مرمر، چینی، اسلب در سنگ ساختمانی کاریزما",
+        title: "سنگ ساختمانی | خرید - فروش - صادرات سنگ ساختمانی | دکتر بهزاد عابدین",
+        description: "خرید سنگ ساختمانی، فروش سنگ ساختمانی، صادرات سنگ ساختمانی مرمریت، تراورتن، گرانیت، مرمر، چینی، اسلب در دکتر بهزاد عابدین",
         websiteURL: "https://karizmastone.com",
-        siteName: "سنگ ساختمانی کاریزما",
+        siteName: "دکتر بهزاد عابدین",
         robot: false,
         position: "35.71570726656777, 51.37135155531929",
         placename: "تهران",
@@ -65,162 +65,162 @@ export default function MainLayout({children, title, metaTitle, metaDescr, metaK
 
 
         <>
-            <Script src={"/sw.js"} strategy={"worker"}/>
-            {locale === "fa" && <Head>
-                <meta charSet="utf-8"/>
-                <meta name="google-site-verification" content="nt6y2MBEJ3jQm3cPRr6xOjjSE7BNfzhs6mTN6wGhUHo"/>
+            {/*<Script src={"/sw.js"} strategy={"worker"}/>*/}
+            {/*{locale === "fa" && <Head>*/}
+            {/*    <meta charSet="utf-8"/>*/}
+            {/*    <meta name="google-site-verification" content="nt6y2MBEJ3jQm3cPRr6xOjjSE7BNfzhs6mTN6wGhUHo"/>*/}
 
 
-                <title>{metaTitle || siteSetting.title}</title>
-                <meta name="title" content={metaTitle || siteSetting?.title}/>
-                <meta name="description" content={metaDescr || siteSetting?.description}/>
-                <meta name='viewport'
-                      content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover, maximum-scale=5'/>
-                <meta name="keywords" content={metaKeywords || siteSetting.keywords}/>
-                {/*og:meta*/}
-                <meta property="og:url" content={siteSetting.websiteURL + router.pathname}/>
-                <meta property="og:site_name" content={siteSetting.siteName}/>
+            {/*    <title>{metaTitle || siteSetting.title}</title>*/}
+            {/*    <meta name="title" content={metaTitle || siteSetting?.title}/>*/}
+            {/*    <meta name="description" content={metaDescr || siteSetting?.description}/>*/}
+            {/*    <meta name='viewport'*/}
+            {/*          content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover, maximum-scale=5'/>*/}
+            {/*    <meta name="keywords" content={metaKeywords || siteSetting.keywords}/>*/}
+            {/*    /!*og:meta*!/*/}
+            {/*    <meta property="og:url" content={siteSetting.websiteURL + router.pathname}/>*/}
+            {/*    <meta property="og:site_name" content={siteSetting.siteName}/>*/}
 
-                <meta property="og:type" content={props.ogType || "website"}/>
-                <meta property="og:locale" content={locale}/>
-                <meta property="og:title" content={metaTitle || siteSetting?.title}/>
-                <meta property="og:description" content={metaDescr || siteSetting?.description}/>
-                <meta property="og:image"
-                      content={props.ogImage || siteSetting.websiteURL + '/sangchalipa-icon/icon-200x200.png'}/>
-                <meta property="og:image:secure_url"
-                      content={props.ogImage || siteSetting.websiteURL + '/sangchalipa-icon/icon-200x200.png'}/>
+            {/*    <meta property="og:type" content={props.ogType || "website"}/>*/}
+            {/*    <meta property="og:locale" content={locale}/>*/}
+            {/*    <meta property="og:title" content={metaTitle || siteSetting?.title}/>*/}
+            {/*    <meta property="og:description" content={metaDescr || siteSetting?.description}/>*/}
+            {/*    <meta property="og:image"*/}
+            {/*          content={props.ogImage || siteSetting.websiteURL + '/sangchalipa-icon/icon-200x200.png'}/>*/}
+            {/*    <meta property="og:image:secure_url"*/}
+            {/*          content={props.ogImage || siteSetting.websiteURL + '/sangchalipa-icon/icon-200x200.png'}/>*/}
 
-                {/*twitter meta*/}
-                <meta name="twitter:domain" content={siteSetting.websiteURL}/>
-                <meta name="twitter:site" content={siteSetting.websiteURL}/>
-                <meta name="twitter:title" content={metaTitle || siteSetting?.title}/>
-                <meta name="twitter:description" content={metaDescr || siteSetting.description}/>
-                <meta name="twitter:card" content="summary"/>
-                <meta name="twitter:image" content={siteSetting.websiteURL + "/sangchalipa-icon/icon-144x144.png"}/>
-                <meta name="twitter:creator" content="@null_design"/>
-                <meta name="twitter:author" content="nulldesign.co"/>
+            {/*    /!*twitter meta*!/*/}
+            {/*    <meta name="twitter:domain" content={siteSetting.websiteURL}/>*/}
+            {/*    <meta name="twitter:site" content={siteSetting.websiteURL}/>*/}
+            {/*    <meta name="twitter:title" content={metaTitle || siteSetting?.title}/>*/}
+            {/*    <meta name="twitter:description" content={metaDescr || siteSetting.description}/>*/}
+            {/*    <meta name="twitter:card" content="summary"/>*/}
+            {/*    <meta name="twitter:image" content={siteSetting.websiteURL + "/sangchalipa-icon/icon-144x144.png"}/>*/}
+            {/*    <meta name="twitter:creator" content="@null_design"/>*/}
+            {/*    <meta name="twitter:author" content="nulldesign.co"/>*/}
 
-                {/*<link itemProp="url" href=""/>*/}
-                <link rel="canonical" href={siteSetting.websiteURL + router.pathname}/>
-                <meta itemProp="name" content={metaTitle || siteSetting.title}/>
-                <meta itemProp="description" content={metaDescr || siteSetting.description}/>
-                {/*<meta name="author" content="آکادمی باریستا ایران"/>*/}
+            {/*    /!*<link itemProp="url" href=""/>*!/*/}
+            {/*    <link rel="canonical" href={siteSetting.websiteURL + router.pathname}/>*/}
+            {/*    <meta itemProp="name" content={metaTitle || siteSetting.title}/>*/}
+            {/*    <meta itemProp="description" content={metaDescr || siteSetting.description}/>*/}
+            {/*    /!*<meta name="author" content="آکادمی باریستا ایران"/>*!/*/}
 
-                {siteSetting.robot && <meta name="robots" content="index, follow"/>}
-                {siteSetting.robot && <meta name="googlebot"
-                                            content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>}
-                {siteSetting.robot && <meta name="bingbot"
-                                            content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>}
+            {/*    {siteSetting.robot && <meta name="robots" content="index, follow"/>}*/}
+            {/*    {siteSetting.robot && <meta name="googlebot"*/}
+            {/*                                content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>}*/}
+            {/*    {siteSetting.robot && <meta name="bingbot"*/}
+            {/*                                content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>}*/}
 
-                {siteSetting.placename && <meta name="geo.placename" content={siteSetting.placename}/>}
-                {siteSetting.position && <meta name="geo.position" content={siteSetting.position}/>}
-                {siteSetting.region && <meta name="geo.region" content={siteSetting.region}/>}
+            {/*    {siteSetting.placename && <meta name="geo.placename" content={siteSetting.placename}/>}*/}
+            {/*    {siteSetting.position && <meta name="geo.position" content={siteSetting.position}/>}*/}
+            {/*    {siteSetting.region && <meta name="geo.region" content={siteSetting.region}/>}*/}
 
-                <link rel='dns-prefetch' href='//s.w.org'/>
+            {/*    <link rel='dns-prefetch' href='//s.w.org'/>*/}
 
 
-                {/*pwa*/}
-                <meta name='application-name' content='Sang Chalipa'/>
-                <meta name='apple-mobile-web-app-capable' content='yes'/>
-                <meta name='apple-mobile-web-app-status-bar-style' content='default'/>
-                <meta name='apple-mobile-web-app-title'
-                      content='Sang Chalipa'/>
-                <meta name='format-detection' content='telephone=yes'/>
-                <meta name='mobile-web-app-capable' content='yes'/>
-                <meta name='msapplication-config' content={siteSetting.websiteURL + '/icons/browserconfig.xml'}/>
-                <meta name='msapplication-TileColor' content='#da532c'/>
-                <meta name='msapplication-tap-highlight' content='no'/>
-                <meta name="msapplication-TileImage"
-                      content={siteSetting.websiteURL + "/sangchalipa-icon/mstile-144x144.png"}/>
-                <meta name="msapplication-starturl" content="/"/>
-                {siteSetting.themeColor && <meta name='theme-color' content={siteSetting.themeColor}/>}
-                <link rel='apple-touch-icon' sizes='180x180'
-                      href={siteSetting.websiteURL + '/sangchalipa-icon/apple-touch-icon.png'}/>
-                <link rel='icon' type='image/png' sizes='32x32'
-                      href={siteSetting.websiteURL + '/sangchalipa-icon/favicon-32x32.png'}/>
-                <link rel='icon' type='image/png' sizes='16x16'
-                      href={siteSetting.websiteURL + '/sangchalipa-icon/favicon-16x16.png'}/>
-                {locale === "en" ? <link rel='manifest' href={siteSetting.websiteURL + '/en.manifest.json'}
-                                         crossOrigin='use-credentials'/> :
-                    <link rel='manifest' href={siteSetting.websiteURL + '/manifest.json'}
-                          crossOrigin='use-credentials'/>}
-                <link rel='mask-icon' href={siteSetting.websiteURL + '/safari-pinned-tab.svg'} color='#4f2c1d'/>
-                <link rel='shortcut icon' href={siteSetting.websiteURL + '/sangchalipa-icon/icon.svg'}/>
-                <script defer id={"MainLD"} key={`JSON-LD`} type='application/ld+json' dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@id": "https://karizmastone.com",
-                        "@type": "HomeAndConstructionBusiness",
-                        "image": [
-                            "https://karizmastone.com/logo.png",
-                            "https://karizmastone.com/slider/9.jpeg",
-                            "https://karizmastone.com/slider/10.jpg",
-                            "https://karizmastone.com/slider/11.JPEG",
-                        ],
-                        "name": "سنگ ساختمانی کاریزما",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "streetAddress": "منطقه ۲، خیابان شهر آرا، ایران",
-                            "addressLocality": "تهران",
-                            "addressRegion": "تهران",
-                            "addressCountry": "ایران"
-                        },
-                        "url": "https://karizmastone.com",
-                        "logo": "https://karizmastone.com/logo.png",
-                        "description": "خرید - فروش - صادرات سنگ ساختمانی مرمریت، تراورتن، گرانیت، مرمر، چینی، اسلب در سنگ ساختمانی کاریزما",
-                        "currenciesAccepted": "IRR",
-                        "priceRange": "$$$",
-                        "geo": {
-                            "@type": "GeoCoordinates",
-                            "latitude": "35.71570726656777",
-                            "longitude": "51.37135155531929"
-                        },
-                        "openingHoursSpecification": {
-                            "@type": "OpeningHoursSpecification",
-                            "dayOfWeek": [
-                                "Monday",
-                                "Tuesday",
-                                "Wednesday",
-                                "Thursday",
-                                "Saturday",
-                                "Sunday"
-                            ],
-                            "opens": "08:00",
-                            "closes": "19:00"
-                        },
-                        "hasMap": "https://goo.gl/maps/ynLQENbkgRN4bcnt9",
-                        "telephone": "+982144011004",
-                        "department": [{
-                            "@type": "LocalBusiness",
-                            "name": "دفتر فروش داخلی",
-                            "telephone": "+982144011005"
-                        }, {
-                            "@type": "LocalBusiness",
-                            "name": "دفتر بازرگانی و صادرات",
-                            "telephone": "+982144011004"
-                        }, {
-                            "@type": "LocalBusiness",
-                            "name": "واحد فروش داخلی",
-                            "telephone": "+989201353229"
-                        }, {
-                            "@type": "LocalBusiness",
-                            "name": "واحد بازارگانی و صادرات",
-                            "telephone": "+989201353228"
-                        }, {
-                            "@type": "LocalBusiness",
-                            "name": "مدیر عامل",
-                            "telephone": "+989121353229"
-                        }, {
-                            "@type": "LocalBusiness",
-                            "name": "قائم مقام مدیر عامل",
-                            "telephone": "+989121353228"
-                        }],
-                    })
-                }}>
+            {/*    /!*pwa*!/*/}
+            {/*    <meta name='application-name' content='Sang Chalipa'/>*/}
+            {/*    <meta name='apple-mobile-web-app-capable' content='yes'/>*/}
+            {/*    <meta name='apple-mobile-web-app-status-bar-style' content='default'/>*/}
+            {/*    <meta name='apple-mobile-web-app-title'*/}
+            {/*          content='Sang Chalipa'/>*/}
+            {/*    <meta name='format-detection' content='telephone=yes'/>*/}
+            {/*    <meta name='mobile-web-app-capable' content='yes'/>*/}
+            {/*    <meta name='msapplication-config' content={siteSetting.websiteURL + '/icons/browserconfig.xml'}/>*/}
+            {/*    <meta name='msapplication-TileColor' content='#da532c'/>*/}
+            {/*    <meta name='msapplication-tap-highlight' content='no'/>*/}
+            {/*    <meta name="msapplication-TileImage"*/}
+            {/*          content={siteSetting.websiteURL + "/sangchalipa-icon/mstile-144x144.png"}/>*/}
+            {/*    <meta name="msapplication-starturl" content="/"/>*/}
+            {/*    {siteSetting.themeColor && <meta name='theme-color' content={siteSetting.themeColor}/>}*/}
+            {/*    <link rel='apple-touch-icon' sizes='180x180'*/}
+            {/*          href={siteSetting.websiteURL + '/sangchalipa-icon/apple-touch-icon.png'}/>*/}
+            {/*    <link rel='icon' type='image/png' sizes='32x32'*/}
+            {/*          href={siteSetting.websiteURL + '/sangchalipa-icon/favicon-32x32.png'}/>*/}
+            {/*    <link rel='icon' type='image/png' sizes='16x16'*/}
+            {/*          href={siteSetting.websiteURL + '/sangchalipa-icon/favicon-16x16.png'}/>*/}
+            {/*    {locale === "en" ? <link rel='manifest' href={siteSetting.websiteURL + '/en.manifest.json'}*/}
+            {/*                             crossOrigin='use-credentials'/> :*/}
+            {/*        <link rel='manifest' href={siteSetting.websiteURL + '/manifest.json'}*/}
+            {/*              crossOrigin='use-credentials'/>}*/}
+            {/*    <link rel='mask-icon' href={siteSetting.websiteURL + '/safari-pinned-tab.svg'} color='#4f2c1d'/>*/}
+            {/*    <link rel='shortcut icon' href={siteSetting.websiteURL + '/sangchalipa-icon/icon.svg'}/>*/}
+            {/*    <script defer id={"MainLD"} key={`JSON-LD`} type='application/ld+json' dangerouslySetInnerHTML={{*/}
+            {/*        __html: JSON.stringify({*/}
+            {/*            "@context": "https://schema.org",*/}
+            {/*            "@id": "https://karizmastone.com",*/}
+            {/*            "@type": "HomeAndConstructionBusiness",*/}
+            {/*            "image": [*/}
+            {/*                "https://karizmastone.com/logo.png",*/}
+            {/*                "https://karizmastone.com/slider/9.jpeg",*/}
+            {/*                "https://karizmastone.com/slider/10.jpg",*/}
+            {/*                "https://karizmastone.com/slider/11.JPEG",*/}
+            {/*            ],*/}
+            {/*            "name": "دکتر بهزاد عابدین",*/}
+            {/*            "address": {*/}
+            {/*                "@type": "PostalAddress",*/}
+            {/*                "streetAddress": "منطقه ۲، خیابان شهر آرا، ایران",*/}
+            {/*                "addressLocality": "تهران",*/}
+            {/*                "addressRegion": "تهران",*/}
+            {/*                "addressCountry": "ایران"*/}
+            {/*            },*/}
+            {/*            "url": "https://karizmastone.com",*/}
+            {/*            "logo": "https://karizmastone.com/logo.png",*/}
+            {/*            "description": "خرید - فروش - صادرات سنگ ساختمانی مرمریت، تراورتن، گرانیت، مرمر، چینی، اسلب در دکتر بهزاد عابدین",*/}
+            {/*            "currenciesAccepted": "IRR",*/}
+            {/*            "priceRange": "$$$",*/}
+            {/*            "geo": {*/}
+            {/*                "@type": "GeoCoordinates",*/}
+            {/*                "latitude": "35.71570726656777",*/}
+            {/*                "longitude": "51.37135155531929"*/}
+            {/*            },*/}
+            {/*            "openingHoursSpecification": {*/}
+            {/*                "@type": "OpeningHoursSpecification",*/}
+            {/*                "dayOfWeek": [*/}
+            {/*                    "Monday",*/}
+            {/*                    "Tuesday",*/}
+            {/*                    "Wednesday",*/}
+            {/*                    "Thursday",*/}
+            {/*                    "Saturday",*/}
+            {/*                    "Sunday"*/}
+            {/*                ],*/}
+            {/*                "opens": "08:00",*/}
+            {/*                "closes": "19:00"*/}
+            {/*            },*/}
+            {/*            "hasMap": "https://goo.gl/maps/ynLQENbkgRN4bcnt9",*/}
+            {/*            "telephone": "+982144011004",*/}
+            {/*            "department": [{*/}
+            {/*                "@type": "LocalBusiness",*/}
+            {/*                "name": "دفتر فروش داخلی",*/}
+            {/*                "telephone": "+982144011005"*/}
+            {/*            }, {*/}
+            {/*                "@type": "LocalBusiness",*/}
+            {/*                "name": "دفتر بازرگانی و صادرات",*/}
+            {/*                "telephone": "+982144011004"*/}
+            {/*            }, {*/}
+            {/*                "@type": "LocalBusiness",*/}
+            {/*                "name": "واحد فروش داخلی",*/}
+            {/*                "telephone": "+989201353229"*/}
+            {/*            }, {*/}
+            {/*                "@type": "LocalBusiness",*/}
+            {/*                "name": "واحد بازارگانی و صادرات",*/}
+            {/*                "telephone": "+989201353228"*/}
+            {/*            }, {*/}
+            {/*                "@type": "LocalBusiness",*/}
+            {/*                "name": "مدیر عامل",*/}
+            {/*                "telephone": "+989121353229"*/}
+            {/*            }, {*/}
+            {/*                "@type": "LocalBusiness",*/}
+            {/*                "name": "قائم مقام مدیر عامل",*/}
+            {/*                "telephone": "+989121353228"*/}
+            {/*            }],*/}
+            {/*        })*/}
+            {/*    }}>*/}
 
-                </script>
+            {/*    </script>*/}
 
-            </Head>}
+            {/*</Head>}*/}
 
 
 

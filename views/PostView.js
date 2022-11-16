@@ -42,12 +42,12 @@ export default function PostView({post}) {
                         "description": pContent.substring(0,109),
                         "author": {
                             "@type": "Organization",
-                            "name": "سنگ ساختمانی کاریزما",
+                            "name": "دکتر بهزاد عابدین",
                             "url": "https://karizmastone.com"
                         },
                         "publisher": {
                             "@type": "Organization",
-                            "name": "سنگ ساختمانی کاریزما",
+                            "name": "دکتر بهزاد عابدین",
                             "logo": {
                                 "@type": "ImageObject",
                                 "url": "https://karizmastone.com/logo.png"
