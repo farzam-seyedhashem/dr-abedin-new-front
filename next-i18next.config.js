@@ -1,15 +1,11 @@
 module.exports = {
     i18n: {
-        locales: ['fa', 'en'],
+        locales: ['fa'],
         defaultLocale: 'fa',
         domains: [
             {
-                domain: 'karizmastone.com',
+                domain: 'dr-abedin.com',
                 defaultLocale: 'fa',
-            },
-            {
-                domain: 'en.karizmastone.com',
-                defaultLocale: 'en',
             },
         ],
         localeDetection: false,
