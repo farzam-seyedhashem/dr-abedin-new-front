@@ -102,7 +102,7 @@ export default function Example({locale}) {
                                 {t("abedin-about")}
                             </ParagraphNormal>
                             <ul className={"list-star-rtl mr-[22px]"}>
-                                {drFeatures.map(item => <li className={"mb-4 relative text-on-surface-variant-light"}>
+                                {drFeatures.map((item,i) => <li key={i} className={"mb-4 relative text-on-surface-variant-light"}>
                                     <h6>
                                         {item}
                                     </h6>
