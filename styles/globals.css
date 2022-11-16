@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .content-p a{
+        @apply hover:underline hover:underline-offset-2 p-px text-primary-light  font-medium hover:text-on-primary-container-light
+    }
+}
+@font-face {
+    font-family: "RobotoFlex";
+    src: url("/fonts/RobotoFlex[slnt,wdth,wght,opsz].woff2") format("woff2 supports variations"),
+    url("/fonts/RobotoFlex[slnt,wdth,wght,opsz].woff2") format("woff2-variations");
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+    font-display: swap;
+}
+@font-face {
+    font-family: "YekanBakh";
+    src: url("/fonts/YekanBakh-VF.woff2") format("woff2 supports variations"),
+    url("/fonts/YekanBakh-VF.woff2") format("woff2-variations");
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+    font-display: swap;
+}
+
+root, html, body:lang(en) {
+    font-family: RobotoFlex, monospace !important;
+}
+
+root, html, body:lang(fa) {
+    font-family: YekanBakh !important;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hidden {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+@keyframes leaves {
+    0% {
+        transform: scale(1.5);
+    }
+    80% {
+        opacity: 100%;
+    }
+    100% {
+        transform: scale(1.0);
+        opacity: 0;
+    }
+}
+.slider-animation {
+    animation-name: leaves;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+.language-checks input[type="radio"] + label {
+    @apply text-on-surface-variant-light ;
+}
+.language-checks input[type="radio"]:checked + label {
+    @apply bg-primary-light text-on-primary-light ;
+}
+.language-checks input[type="radio"] + label .check {
+    display: none;
+}
+.language-checks input[type="radio"]:checked + label .check {
+    display: block;
+}
+/*.bgSurface1 {*/
+/*    background: linear-gradient(0deg, rgba(132, 84, 0, 0.05), rgba(132, 84, 0, 0.05)), linear-gradient(0deg, hsla(300, 100%, 99%, 0.02), hsla(300, 100%, 99%, 0.02)), #fff*/
+/*}*/
+.bg-surface-1 {
+    background:linear-gradient(0deg,rgba(56, 92, 169,0.05),rgba(56, 92, 169,0.05)),linear-gradient(0deg,hsla(0,0%,46%,0.02),hsla(0,0%,46%,0.02)),#fefbff;
+}
+
+.list-star li{
+
+}
+.list-star-rtl li:before{
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    right: -16px;
+    width: 8px;
+    height: 8px;
+    transform: rotate(calc(6 * 36deg));
+    background-image: url("/star.svg");
+    line-height: 0;
+    text-align: center;
+    content: "";
+}
+
+
+/*.bg-surface-2-light {*/
+/*    background:linear-gradient(0deg,rgba(132, 84, 0,0.08),rgba(132, 84, 0,0.08)),linear-gradient(0deg,hsla(0,0%,46%,0.02),hsla(0,0%,46%,0.02)),#fffbff;*/
+/*}*/
+/*.bg-surface-3-light {*/
+/*    background:linear-gradient(0deg,rgba(132, 84, 0,0.11),rgba(132, 84, 0,0.11)),linear-gradient(0deg,hsla(0,0%,46%,0.02),hsla(0,0%,46%,0.02)),#fffbff;*/
+/*}*/
+/*.bg-surface-4-light {*/
+/*    background:linear-gradient(0deg,rgba(132, 84, 0,0.12),rgba(132, 84, 0,0.12)),linear-gradient(0deg,hsla(0,0%,46%,0.02),hsla(0,0%,46%,0.02)),#fffbff;*/
+/*}*/
+/*.bg-surface-5-light {*/
+/*    background:linear-gradient(0deg,rgba(132, 84, 0,0.14),rgba(132, 84, 0,0.14)),linear-gradient(0deg,hsla(0,0%,46%,0.02),hsla(0,0%,46%,0.02)),#fffbff;*/
+/*}*/
+
+
+/*.dark\:bg-surface-2-dark {*/
+/*    background:linear-gradient(0deg,rgba(255, 185, 90,0.08),rgba(255, 185, 90,0.08)),linear-gradient(0deg,hsla(0,0%,46%,0.02),hsla(0,0%,46%,0.02)),#1f1b16;*/
+/*}*/
+/*.dark\:bg-surface-3-dark {*/
+/*    background:linear-gradient(0deg,rgba(255, 185, 90,0.11),rgba(255, 185, 90,0.11)),linear-gradient(0deg,hsla(0,0%,46%,0.02),hsla(0,0%,46%,0.02)),#1f1b16;*/
+/*}*/
+/*.dark\:bg-surface-4-dark {*/
+/*    background:linear-gradient(0deg,rgba(255, 185, 90,0.12),rgba(255, 185, 90,0.12)),linear-gradient(0deg,hsla(0,0%,46%,0.02),hsla(0,0%,46%,0.02)),#1f1b16;*/
+/*}*/
+/*.dark\:bg-surface-5-dark {*/
+/*    background:linear-gradient(0deg,rgba(255, 185, 90,0.14),rgba(255, 185, 90,0.14)),linear-gradient(0deg,hsla(0,0%,46%,0.02),hsla(0,0%,46%,0.02)),#1f1b16;*/
+/*}*/
