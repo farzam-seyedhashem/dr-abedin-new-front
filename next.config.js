@@ -7,9 +7,9 @@ const zlib = require("zlib");
 const CompressionPlugin = require("compression-webpack-plugin");
 const redirects = require('./redirectlist');
 module.exports = withPWA({
-    pwa: {
-        dest: 'public'
-    },
+    // pwa: {
+    //     dest: 'public'
+    // },
 
     async redirects() {
         return [
