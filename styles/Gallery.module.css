@@ -1,0 +1,24 @@
+.loading {
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: initial;
+    animation-fill-mode: initial;
+    animation-play-state: initial;
+    animation-name: fade-in;
+    opacity: 8%;
+    background: #534341
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 8%
+    }
+    50% {
+        opacity: 12%
+    }
+    100% {
+        opacity: 8%
+    }
+}
