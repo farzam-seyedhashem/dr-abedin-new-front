@@ -11,11 +11,6 @@ module.exports = withPWA({
     //     dest: 'public'
     // },
 
-    async redirects() {
-        return [
-            ...redirects
-        ];
-    },
     reactStrictMode: false,
     i18n,
     compress: false,
